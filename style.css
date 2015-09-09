@@ -1,0 +1,99 @@
+body {
+	margin: 0px;
+	font-size-adjust
+}
+
+div {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+#wrapper {
+	width: 100vw;
+	height: 100vh;
+}
+
+#wrapper .borderDiv {
+	background-color: #222;
+	/*box-sizing: border-box;
+	border: 1px solid black;*/  /*for testing purposes*/
+}
+
+#topDiv {
+	width: 100%;
+	height: 2%;
+	margin: 0 auto;
+	float: left;
+}
+
+#leftDiv {
+	width: 2%;
+	height: 96%;
+	float: left;
+}
+
+#rightDiv {
+	width: 2%;
+	height: 96%;
+	float: left;
+}
+
+#bottomDiv {
+	width: 100%;
+	height: 2%;
+	bottom: 0px;
+	position: fixed;
+}
+
+#centerDiv {
+	width: 96%;
+	height: 96%;
+	background-color: #bcbcbc;
+	box-sizing: border-box;
+	border: 1px solid black;
+	float: left;
+}
+
+#centerDiv > div{
+	background-color: blue;
+	box-sizing: border-box;
+	border: 1px solid black;
+	width: 100%;
+}
+
+#topContent  {
+	height: 50%;
+}
+
+#bottomContent  {
+	height: 50%;
+}
+
+#centerDiv > div > div {
+	background-color: #eee;
+	box-sizing: border-box;
+	border: 1px solid black;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.button {
+	border: 1px solid black;
+	box-sizing: border-box;
+	width: 40%;
+	float: left;
+	-webkit-user-select: none;
+	margin: 1px;
+	background-color: #bbb;
+}
+
+.button:hover{
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.button:active{
+	background-color: #aaa;
+}
