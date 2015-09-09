@@ -1,3 +1,11 @@
+/*
+
+http://codeshare.io/GkHYJ		HTML-u'
+http://codeshare.io/flIoR		Css-u'
+http://codeshare.io/gA4tk		JavaScriptu'
+
+*/
+
 body {
 	margin: 0px;
 	font-size-adjust
@@ -96,4 +104,15 @@ div {
 
 .button:active{
 	background-color: #aaa;
+}
+
+#businessList{
+  display: none;
+}
+
+.businessType{
+  border: 1px solid black;
+  width: 45%;
+  float: left;
+  display: none;
 }

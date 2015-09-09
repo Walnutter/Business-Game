@@ -1,3 +1,11 @@
+<!--
+
+http://codeshare.io/GkHYJ		HTML-u'
+http://codeshare.io/flIoR		Css-u'
+http://codeshare.io/gA4tk		JavaScriptu' 
+
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,18 +21,44 @@
 		<div id="centerDiv"> <!-- all main game html goes here -->
 			<div id="topContent">
 				<div id="topLeftContent">
-					<div>stats</div>
+					<ul>
+            <li>STATS</li>
+            <li>cash: <span id=cashVar>0</span></li>
+          </ul>
 				</div>
 				<div id="topRightContent">
-					<div class="button" id="addFoodWorker" onclick="addFoodWorker()">Add Food Worker</div>
+					<div class="button" id="addFoodWorker" onclick="addFoodWorker()">Buton</div>
+              <div class="button" id="newGame" onclick="newGame()">Start a new game</div>
 				</div>
 			</div>
 			<div id="bottomContent">
 				<div id="bottomLeftContent">
+              <table id="businessList">
+                <tr>
+                  <td><div class="button" id="lemonadeButton" onclick="selectBusiness(1)">Lemonade</div></td>
+                  <td><div class="button" onclick="selectBusiness(2)">Boutique</div></td>
+                  <td><div class="button" onclick="selectBusiness(3)">Pawn Shop</div></td>
+                  <td><div class="button" onclick="selectBusiness(4)">Software</div></td>
+                </tr>
+                <tr>
+                  <td><div class="button" onclick="selectBusiness(5)">Start a new game</div></td>
+                  <td><div class="button" onclick="selectBusiness(6)">Start a new game</div></td>
+                  <td><div class="button" onclick="selectBusiness(7)">Start a new game</div></td>
+                  <td><div class="button" onclick="selectBusiness(8)">Start a new game</div></td>
+                </tr>
+              </table>
 				</div>
 				<div id="bottomRightContent">
+          <div class="businessType" id="lemonadeBusiness">
+            <center><h2> Lemonade Business </h2></center>
+            Number of stands: <span id="lemonadeNumber">0</span>
+            Profit per second: <span id="lemonadeProfit">0</span>
+            Stand Cost: <span id="lemonadeCost">0</span>
+            <div class="button" onclick="buyLemonade()">Add stand</div>
+            <div class="button" onclick="buyWorker()">Add stand</div>
+          </div>
 				</div>
-			</div>
+			</div
 		</div>
 		<div class="borderDiv" id="rightDiv">
 		</div>
